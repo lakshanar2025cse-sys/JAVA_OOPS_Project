@@ -1,0 +1,2 @@
+.checkout-error { color: #a3372c; font-size: 12px; line-height: 1.45; margin: 0; }
+.place-order:disabled { cursor: wait; opacity: .65; transform: none; }

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: clothing-store-api
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/clothing_store_db}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    baseline-on-migrate: true
+    baseline-version: 2
+app:
+  cors-origin: ${CORS_ORIGIN:http://localhost:5173}
+  jwt-secret: ${JWT_SECRET}
+  initial-admin-email: ${ADMIN_EMAIL:}
+  initial-admin-password: ${ADMIN_PASSWORD:}
+server:
+  port: ${SERVER_PORT:8081}

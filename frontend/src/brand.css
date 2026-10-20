@@ -1,0 +1,24 @@
+.logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.logo span {
+  color: #9d6759;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* Preserve the campaign subjects' faces within the hero crop. */
+.hero {
+  background-position: center 30%;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    background-position: 57% 30%;
+  }
+}
